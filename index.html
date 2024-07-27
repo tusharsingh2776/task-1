@@ -1,170 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-commerce Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>My E-commerce</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal-portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7fc426f765.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="images/my-img.jpg" class="logo"> -->
+          <h2><span>T</span>ushar.</h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>THE-Freelancer</p>
+          <h1>
+            Hi, I'm <span>Tushar</span><br />
+            Singh From India
+          </h1>
         </div>
-    </header>
-
-    <section class="hero">
+      </div>
+    </div>
+    <!-- -------------------------ABOUT------------------------------------- -->
+    <div id="about">
         <div class="container">
-            <h2>Welcome to My E-commerce</h2>
-            <p>Discover amazing products and deals!</p>
-            <a href="#" class="btn">Shop Now</a>
-        </div>
-    </section>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="  ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nobis maxime ut delectus maiores repellendus facilis quas veritatis placeat aliquid voluptatem magni accusantium suscipit aliquam libero blanditiis beatae, voluptate doloribus!a,khdklkjwldhkhekjhkfbnsmbdsdffe smdhfgjhdgf ehdwkugwugfyefys caftysr qwvdsmnbd </p>
 
-    <section class="products">
-        <div class="container">
-            <h2>housholds items</h2>
-            <div class="product-list">
-                <!-- Products will be dynamically generated here -->
-                <!-- Example product -->
-                <div class="product">
-                    <img src="dove shampoo.jpg" alt="product 1">
-                    <h3>shampoo</h3>
-                    <p class="price">$125</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
-                </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="product 1">
-                    <h3>tuvar dal</h3>
-                    <p class="price">$100</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
-                </div>
-                <div class="product">
-                    <img src="broom.jpg" alt="product 1">
-                    <h3>jhaadu</h3>
-                    <p class="price">$160</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience"> 
+                        <!-- {about my exp....} -->
+                        <ul>
+                            <li><span>2018-2020</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="education">
+                        <!-- {about my edu...} -->
+                        <ul>
+                            <li><span>1999</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="products">
+    </div>
+    <!-- ------------------------Services---------------------------- -->
+    <div id="services">
         <div class="container">
-            <h2>pet accessories</h2>
-            <div class="product-list">
-                <!-- Products will be dynamically generated here -->
-                <!-- Example product -->
-                <div class="product">
-                    <img src="dog collor.jpeg" alt="product 1">
-                    <h3>dog collor</h3>
-                    <p class="price">$210</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae, provident maiores error culpa excepturi consequatur quibusdam ex ducimus quos.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <div class="product">
-                    <img src="chew bone.jpeg" alt="product 1">
-                    <h3>chew bone</h3>
-                    <p class="price">$65</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae, provident maiores error culpa excepturi consequatur quibusdam ex ducimus quos.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <div class="product">
-                    <img src="dog shampoo.jpeg" alt="product 1">
-                    <h3>shampoo</h3>
-                    <p class="price">$467</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae, provident maiores error culpa excepturi consequatur quibusdam ex ducimus quos.</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="products">
-        <div class="container">
-            <h2>phone accessories</h2>
-            <div class="product-list">
-                <!-- Products will be dynamically generated here -->
-                <!-- Example product -->
-                <div class="product">
-                    <img src="headphones.jpeg" alt="product 1">
-                    <h3>HEADPHONES</h3>
-                    <p class="price">$1498</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">Add to Cart</button>
+    </div>
+    <!-- -------------------------Portfolio------------------------------- -->
+    <div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="   ">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur exercitationem neque, fugit sed commodi unde aliquid.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src=" ">
+            <div class="layer">
+                <h3>Music App</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur exercitationem neque, fugit sed commodi unde aliquid.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="  ">
+            <div class="layer">
+                <h3>Calci App</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur exercitationem neque, fugit sed commodi unde aliquid.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+    </div>
+    <!-- -------------------------------Contact------------------------------------------- -->
 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> email</p>
+                <p> <i class="fa-solid fa-phone-volume"></i> number</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <div class="product">
-                    <img src="charger.jpg" alt="product 1">
-                    <h3>charger</h3>
-                    <p class="price">$943</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="sim ejector.jpeg" alt="product 1">
-                    <h3>sim ejector</h3>
-                    <p class="price">$43</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">Add to Cart</button>
-                </div>
+                <a href="   " download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
-    </section>
-    <section class="products">
-        <div class="container">
-            <h2>lifestyle</h2>
-            <div class="product-list">
-                <!-- Products will be dynamically generated here -->
-                <!-- Example product -->
-                <div class="product">
-                    <img src="hunter.jpeg" alt="product 1">
-                    <h3>hunter jacket</h3>
-                    <p class="price">$2300</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
-                </div>
-                <div class="product">
-                    <img src="perfume.jpeg" alt="product 1">
-                    <h3>perfumes</h3>
-                    <p class="price">$456</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
-                </div>
-                <div class="product">
-                    <img src="jutti.jpeg
-                    " alt="product 1">
-                    <h3>jutiya</h3>
-                    <p class="price">$550</p>
-                    <button class="btn">Add to Cart</button>
-                    <button class="btn">buy now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 My E-commerce. All rights reserved.</p>
-        </div>
-    </footer>
-    <footer>
-        <div class="container">
-            <a>&copy; TU$H@R</a>
-        </div>
-    </footer>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Tu$h@r.Made in 2024</p>
+    </div>
+</div>
 
-    <script src="script.js"></script>
-</body>
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }        
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }      
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+  </body>
 </html>
-
 
